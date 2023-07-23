@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Test App</title>
+    <style>
+        body {
+            padding: 20px;
+            background-color: pink;
+            border: 1px solid black;
+        }
+
+        div {
+            padding: 20px;
+            background-color: green;
+            width: max-content;
+        }
+
+        span {
+            display: block;
+            padding: 20px;
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body id="body">
+    <div id="div">
+        <span id="span">
+            <button id="button">Click Me!</button>
+        </span>
+    </div>
+
+    <script>
+        const button = document.getElementById("button");
+        const span = document.getElementById("span");
+        const div = document.getElementById("div");
+        const body = document.getElementById("body");
+
+        button.addEventListener("click", (event) => {
+            event.stopPropagation();
+            console.log("button clicked !!!");
+        });
+
+        span.addEventListener("click", (event) => {
+            event.stopPropagation();
+            console.log("span clicked !!!");
+        });
+
+        div.addEventListener("click", () => {
+            event.stopPropagation();
+            console.log("div clicked !!!");
+        });
+
+        body.addEventListener("click", () => {
+            event.stopPropagation();
+            console.log("body clicked !!!");
+        });
+    </script>
+</body>
+
+</html>
