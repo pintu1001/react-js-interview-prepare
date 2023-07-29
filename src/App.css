@@ -13,9 +13,30 @@
   }
 }
 
+.active {
+  background-color: green;
+  color: aliceblue;
+}
+
 .parent {
   display: flex;
   flex-wrap: wrap;
+}
+
+.active {
+  display: block;
+}
+
+.none {
+  display: none;
+}
+
+.spanArr {
+  float: right;
+  font-size: 20px;
+  margin-top: -5px;
+  font-weight: 800;
+  cursor: pointer;
 }
 
 .child {

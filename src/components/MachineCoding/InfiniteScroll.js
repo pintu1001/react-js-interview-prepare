@@ -3,6 +3,7 @@
 // 3. add infinite scroll
 
 import { useState, useEffect, Fragment } from 'react';
+import axios from 'axios'
 import "../../App.css"
 
 
@@ -11,19 +12,25 @@ export default function ExerciseFour() {
     const [currentPage, setCurrentPage] = useState(1);
     const [itemPerPage] = useState(15);
     useEffect(() => {
-        fetch("https://jsonplaceholder.typicode.com/todos")
-            .then((dt) => dt.json())
+        axios.get("https://jsonplaceholder.typicode.com/todos")
             .then((res) => {
-                setAllData(res);
+                console.log(res);
+                setAllData(res.data);
             })
+        // fetch("https://jsonplaceholder.typicode.com/todos")
+        //     .then((dt) => dt.json())
+        //     .then((res) => {
+        //         setAllData(res);
+        //     })
     }, []);
 
     window.addEventListener("scroll", () => {
         if (window.scrollY + window.innerHeight >= document.documentElement.scrollHeight) {
-            setCurrentPage(currentPage + 1);
+            setTimeout(() => {
+                setCurrentPage(currentPage + 1);
+            }, 1000)
         }
     })
-
     return (
         <Fragment>
             <h2>Infinite Scroll Example</h2>
@@ -38,8 +45,6 @@ export default function ExerciseFour() {
                 currentPage < allData.length / itemPerPage &&
                 <div style={{ paddingBottom: "55px", margin: "2px 0px 53px 0px", color: "red", fontWeight: "900" }}>Loading .......</div>
             }
-
         </Fragment>
-
     )
 }

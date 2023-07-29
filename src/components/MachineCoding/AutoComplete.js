@@ -7,7 +7,6 @@ export default function ExerciseOne() {
     const [data, setData] = useState([]);
     const [value, setValue] = useState("");
     const onChange = (e) => {
-        let value = e.target.value;
         setValue(e.target.value);
     }
     useEffect(() => {

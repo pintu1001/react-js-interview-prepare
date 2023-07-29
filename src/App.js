@@ -4,7 +4,9 @@ import ComponentA from './components/Hooks/ComponentA';
 
 import Hoc from './components/Hooks/Hoc';
 // import Add from './components/Hooks/Add';
-import ExerciseFour from './components/MachineCoding/ExerciseFour';
+import ExerciseTwo from './components/Dom/ExerciseTwo';
+// import ConstructorFunction from './components/Oops/ConstructorFunction';
+import InfiniteScroll from './components/MachineCoding/InfiniteScroll';
 
 export const UserContext = React.createContext();
 export const ChannelContext = React.createContext();
@@ -34,7 +36,7 @@ function App() {
       {/* <Currying /> */}
       {/* <CallbackPromiseAsyncAwait /> */}
       {/* <Add /> */}
-      <ExerciseFour />
+      <InfiniteScroll />
     </div>
   );
 }

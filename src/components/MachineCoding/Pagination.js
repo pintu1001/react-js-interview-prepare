@@ -3,7 +3,7 @@
 // 3. add pagination for rest items
 
 import { useState, useEffect, Fragment } from 'react';
-import "../../App.css"
+import "../../App.css";
 
 
 export default function ExerciseThree() {
@@ -43,7 +43,7 @@ export default function ExerciseThree() {
             <div>
                 <button disabled={currentPage === 1} onClick={() => handlePrevious()}>Previous</button>
                 {totalPages.map(res => (
-                    <button style={{ margin: "2px" }} onClick={() => setCurrentPage(res + 1)}>{res + 1}</button>
+                    <button className={currentPage === res + 1 ? "active" : ""} style={{ margin: "2px" }} onClick={() => setCurrentPage(res + 1)}>{res + 1}</button>
                 ))}
                 <button disabled={currentPage === totalPages.length} onClick={() => handleNext()}>Next</button>
             </div>
