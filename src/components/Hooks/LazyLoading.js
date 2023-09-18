@@ -15,7 +15,6 @@ export default function LazyLoading() {
             <Suspense fallback={<div>Please wait.....</div>}>
                 <Title />
             </Suspense>
-            
         </>
     )
 }

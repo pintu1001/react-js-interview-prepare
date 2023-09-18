@@ -4,9 +4,13 @@ import ComponentA from './components/Hooks/ComponentA';
 
 import Hoc from './components/Hooks/Hoc';
 // import Add from './components/Hooks/Add';
-import ExerciseTwo from './components/Dom/ExerciseTwo';
+// import Class from './components/Oops/Class';
 // import ConstructorFunction from './components/Oops/ConstructorFunction';
-import InfiniteScroll from './components/MachineCoding/InfiniteScroll';
+// import InfiniteScroll from './components/MachineCoding/InfiniteScroll';
+// import Calculator from './components/MachineCoding/Calculator';
+// import Class from './components/Oops/Class';
+// import ProgressBar from './components/MachineCoding/ProgressBar';
+import Promise from "./components/Javascript/Promise"
 
 export const UserContext = React.createContext();
 export const ChannelContext = React.createContext();
@@ -36,7 +40,12 @@ function App() {
       {/* <Currying /> */}
       {/* <CallbackPromiseAsyncAwait /> */}
       {/* <Add /> */}
-      <InfiniteScroll />
+      {/* <InfiniteScroll /> */}
+      {/* <TodoApp /> */}
+      {/* <Hoisting /> */}
+      {/* <Calculator /> */}
+      <Promise />
+      {/* <Promise /> */}
     </div>
   );
 }

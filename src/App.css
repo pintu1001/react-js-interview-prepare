@@ -71,3 +71,146 @@
     transform: rotate(360deg);
   }
 }
+
+.todoDiv {
+  /* border: 1px solid #80808030; */
+  width: 30%;
+  margin: 50px auto;
+  min-height: 200px;
+  background: #aaffff42;
+  padding: 20px;
+}
+
+.card {
+  border: 2px solid #80808030;
+  margin: 10px;
+  padding: 10px;
+  box-shadow: 0px 3px 3px 1px #ff00001a;
+  text-align: initial;
+  background: #bbaaddd6;
+}
+
+span {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.stopwatch {
+  width: 300px;
+  height: 90px;
+  margin: 100px auto;
+  background: white;
+  color: #333;
+  border-radius: 10px;
+  padding: 60px 50px 100px;
+  text-align: center;
+  font-size: 30px;
+}
+
+body {
+  font-family: arial;
+  /* background: #0776de; */
+}
+
+.stopwatch button {
+  font-size: 22px;
+  -webkit-appearance: none;
+  border: none;
+  background-color: #2e80b3;
+  color: white;
+  border-radius: 5px;
+  width: 140px;
+  height: 50px;
+  transition: .3s;
+}
+
+.stopwatch button:first-of-type {
+  margin-top: 15px;
+  margin-right: 20px;
+}
+
+.stopwatch button:last-child {
+  background-color: #ae7617;
+}
+
+.stopwatch button:hover {
+  background: #333;
+  color: #fff;
+  cursor: pointer;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(140deg, blue, blue);
+}
+
+.calculator {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+form input {
+  border: none;
+  outline: 0;
+  width: 60px;
+  height: 60px;
+  font-size: 16px;
+  background-color: rgb(91, 91, 151);
+  margin: 2px;
+  border-radius: 10px;
+  color: white;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+form input[type='button']:hover {
+  background-color: rgb(137, 22, 245);
+}
+
+.display {
+  display: flex;
+  justify-content: flex-end;
+  margin: 5px 0px 15px 0px;
+}
+
+.display input {
+  text-align: right;
+  flex: 1;
+  font-size: 40px;
+  padding: 5px 10px;
+  background-color: rgb(64, 64, 64);
+  cursor: default;
+}
+
+.equal {
+  width: 123px;
+}
+
+.progressbar {
+  width: 50%;
+  margin: 0px auto;
+  border: 1px solid;
+  border-radius: 50px;
+  text-align: center;
+  background-color: white;
+}
+.progressbarFill{
+  height: 100%;
+  border-radius: 50px;
+  background-color: #00c100;
+  transition: width 0.5 ease-out;
+  color:#fff;
+}
+.light{
+  background-color: #fff;
+  color:#000;
+}
+.dark{
+  background-color: #000;
+  color:#fff;
+}

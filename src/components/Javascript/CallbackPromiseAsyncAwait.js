@@ -67,7 +67,6 @@ function createData(newData) {
             }
         }, 2000)
     })
-
 }
 
 async function start(){

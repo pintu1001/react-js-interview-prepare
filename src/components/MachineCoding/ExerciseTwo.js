@@ -24,7 +24,7 @@ export default function ExerciseTwo() {
                 count = 1;
             }
             else {
-                count = -1
+                count = -1;
             }
             return count;
         })
